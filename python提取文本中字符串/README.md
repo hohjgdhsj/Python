@@ -45,9 +45,9 @@ awk [-F  field-separator]  'commands'  input-file(s)
 awk -f awk-script-file input-file(s)
 其中，-f选项加载awk-script-file中的awk脚本，input-file(s)跟上面的是一样的。
 http://www.cnblogs.com/ggjucheng/archive/2013/01/13/2858470.html
-————————————————————————————————————————————————
+——————————————————————————————————————————————————————— 
 cat password.txt | grep password | awk -F ' ' '{print $7}' | awk -F '?' '{print $2}' | awk -F '&' '{print $1"&"$2}' 
-
+——————————————————————————————————————————————————————— 
 example：
 username=2013111120&password=19931210sjq
 username=2014122221&password=XILY19950906
